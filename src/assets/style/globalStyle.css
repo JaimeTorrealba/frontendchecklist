@@ -1,0 +1,11 @@
+.space3 {
+  @apply m-3 p-3;
+}
+
+.Button {
+  @apply p-1 m-1 border rounded-lg shadow-lg text-base-white w-full;
+}
+
+#app {
+  @apply font-open;
+}
