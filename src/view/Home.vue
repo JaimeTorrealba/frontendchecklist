@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-6">
-    <theSidebar />
+    <Sidebar />
     <div class="col-span-5">
       <DefaultLayout>
         <div>
@@ -54,25 +54,25 @@
               >
             </div>
           </div>
-          <theInfo />
+          <Info />
         </div>
 
-        <theFooter />
+        <Footer />
       </DefaultLayout>
     </div>
   </div>
 </template>
 <script>
-import theFooter from '../components/organism/theFooter';
-import theInfo from '../components/organism/theInfo';
-import theSidebar from '../components/organism/theSidebar';
+import Footer from '../components/organism/theFooter';
+import Info from '../components/organism/theInfo';
+import Sidebar from '../components/organism/theSidebar';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 
 export default {
   components: {
-    theFooter,
-    theInfo,
-    theSidebar,
+    Footer,
+    Info,
+    Sidebar,
     DefaultLayout,
   },
   data() {

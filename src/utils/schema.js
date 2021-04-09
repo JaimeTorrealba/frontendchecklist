@@ -1,5 +1,6 @@
 export const schema = {
   Images: {
+    title: 'Images',
     LazyLoading: {
       title: 'Lazy Loading',
       description: 'Add native lazy loading with your image, th load of your page will be improved',
@@ -26,6 +27,41 @@ export const schema = {
     },
     Picture: {
       title: 'Picture tags',
+      description: 'Remember use picture tag where you need',
+      state: false,
+      link: null,
+      link2: null,
+      link3: null,
+    },
+  },
+  Images2: {
+    title: 'Segundo coso',
+    LazyLoading: {
+      title: 'sub categoria 1',
+      description: 'Add native lazy loading with your image, th load of your page will be improved',
+      state: false,
+      link: null,
+      link2: null,
+      link3: null,
+    },
+    Optimization: {
+      title: 'sub categoria 13',
+      description: 'Try always the best relation quality/weight for your images',
+      state: false,
+      link: null,
+      link2: null,
+      link3: null,
+    },
+    AltText: {
+      title: 'sub categoria 12',
+      description: 'Don´t forget the atribute alt in your images, this improve your Accessibility',
+      state: false,
+      link: null,
+      link2: null,
+      link3: null,
+    },
+    Picture: {
+      title: 'sub categoria 14',
       description: 'Remember use picture tag where you need',
       state: false,
       link: null,

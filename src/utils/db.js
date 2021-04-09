@@ -1,6 +1,5 @@
 import Dexie from 'dexie';
 import { schema } from './schema';
-import store from '../store/store';
 
 export const db = new Dexie('Projects');
 db.version(1).stores({
@@ -13,7 +12,7 @@ export const addNewProject = async (name) => {
     name: name,
     checkList: schema,
   });
-  saveInVuex(newTable);
+  alert(newTable);
 };
 
 export const searchForName = async (queryName) => {
@@ -23,8 +22,6 @@ export const searchForName = async (queryName) => {
   }
   addNewProject(queryName);
 };
-export const saveInVuex = async (tableId) => {
-  const tables = await db.Projects.get(tableId);
-  await store.dispatch('updateStoreAction', { tables });
-  alert('Se guardo correctamente');
+export const getProjectByName = async (tableName) => {
+  return await db.Projects.get({ name: tableName });
 };

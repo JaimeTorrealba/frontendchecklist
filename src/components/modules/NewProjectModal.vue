@@ -18,18 +18,8 @@
           />
         </div>
         <div class="flex justify-evenly mx-8">
-          <Button
-            id="cancel"
-            label="Cancel"
-            tailwind="Button bg-warning-darker focus:outline-none hover:bg-warning-dark"
-            @click="$emit('close')"
-          />
-          <Button
-            id="add"
-            label="Add new project"
-            tailwind="Button bg-success-main focus:outline-none hover:bg-success-dark"
-            @click="validateName()"
-          />
+          <Button id="cancel" label="Cancel" variant="Warning" @click="$emit('close')" />
+          <Button id="add" label="Add new project" variant="Success" @click="validateName()" />
         </div>
       </div>
     </div>
@@ -53,7 +43,6 @@ export default {
   },
   methods: {
     async validateName() {
-      console.log('asd');
       if (this.ProjectName !== '') {
         await searchForName(this.ProjectName);
         return this.$emit('close');

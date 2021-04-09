@@ -3,23 +3,11 @@ import { createStore } from 'vuex';
 // Create a new store instance.
 const store = createStore({
   state() {
-    return {
-      Projects: [],
-    };
+    return {};
   },
-  mutations: {
-    updateStorageMutation(state, newValue) {
-      state.Projects = [...state.Projects, newValue];
-    },
-  },
-  getters: {
-    ProjectNames: (state) => state.Projects,
-  },
-  actions: {
-    updateStoreAction({ commit }, newValue) {
-      commit('updateStorageMutation', newValue);
-    },
-  },
+  mutations: {},
+  getters: {},
+  actions: {},
 });
 
 export default store;
