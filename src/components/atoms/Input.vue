@@ -8,6 +8,7 @@
       :value="value"
       class="rounded-lg p-1 border border-primary-main focus:outline-none w-24 md:w-32"
       @input="$emit('update:value', $event.target.value)"
+      autocomplete="off"
     />
   </div>
 </template>

@@ -16,7 +16,7 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md, vue}": "prettier --write --no-semi --single-quote"
   },
   "main": "background.js",
   "dependencies": {

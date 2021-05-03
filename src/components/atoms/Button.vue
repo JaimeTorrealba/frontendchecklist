@@ -22,7 +22,7 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
+<style lang="postcss" scoped>
 .Button {
   @apply p-1 m-1 border rounded-lg shadow-lg focus:outline-none w-full;
 }

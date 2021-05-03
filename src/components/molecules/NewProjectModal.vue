@@ -35,7 +35,7 @@ export default {
     Button,
     Input,
   },
-  emits: ['close'],
+  emits: ['close', 'reload'],
   data() {
     return {
       ProjectName: '',
@@ -45,7 +45,8 @@ export default {
     async validateName() {
       if (this.ProjectName !== '') {
         await searchForName(this.ProjectName);
-        return this.$emit('close');
+        this.$emit('close');
+        return this.$emit('reload');
       }
       alert('El nombre no puede quedar vacio');
     },

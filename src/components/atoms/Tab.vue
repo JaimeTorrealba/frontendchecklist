@@ -25,7 +25,7 @@ export default {
   emits: ['setValue'],
 };
 </script>
-<style lang="css" scoped>
+<style lang="postcss" scoped>
 .Tab {
   @apply py-2 px-6 bg-info-lighter rounded-t-lg hover:bg-info-light;
 }

@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import TabContent from '../atoms/TabContent';
+import TabContent from '../molecules/TabContent';
 import Tab from '../atoms/Tab';
 import { getProjectByName } from '../../utils/db';
 
@@ -22,6 +22,9 @@ export default {
   },
   created() {
     this.fetchData();
+  },
+  watch: {
+    $route: 'fetchData',
   },
   data() {
     return {

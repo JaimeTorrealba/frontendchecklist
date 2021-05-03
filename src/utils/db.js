@@ -23,5 +23,9 @@ export const searchForName = async (queryName) => {
   addNewProject(queryName);
 };
 export const getProjectByName = async (tableName) => {
-  return await db.Projects.get({ name: tableName });
+  const test = await db.Projects.get({ name: tableName });
+  return test;
+};
+export const getAllTables = async () => {
+  return await db.table('Projects').toArray();
 };
